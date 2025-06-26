@@ -1,0 +1,121 @@
+.read-container {
+    background-color: #f8fafc;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.read-application-card {
+    color: #333;
+    height: 30vh;
+    width: 18vw;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 2px 8px rgba(100, 116, 139, 0.08);
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.read-application-card:hover {
+    transform: translate(-2px, -4px);
+    box-shadow: 0 4px 12px rgba(100, 116, 139, 0.12);
+    border-color: #64748b;
+}
+
+.read-card-content {
+    flex-grow: 1;
+}
+
+.read-card-company-name {
+    color: #1e293b;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.read-card-job-title {
+    color: #64748b;
+    margin-bottom: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.read-card-dates {
+    margin-bottom: 12px;
+}
+
+.read-card-submission-date,
+.read-card-response-date {
+    color: #64748b;
+    font-size: 0.8rem;
+    margin: 2px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.read-card-result {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.read-result-badge {
+    background-color: #64748b;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.read-button-group {
+    display: flex;
+    gap: 12px;
+}
+
+.read-back-button,
+.read-update-button, 
+.read-delete-button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background-color: #64748b;
+    color: white;
+}
+
+.read-back-button:hover,
+.read-update-button:hover,
+.read-delete-button:hover {
+    background-color: #475569;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(100, 116, 139, 0.15);
+}
+
+
+.read-delete-button:hover {
+    background-color: red;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(100, 116, 139, 0.15);
+    font-weight: 600;
+    transition: all ease;
+}
