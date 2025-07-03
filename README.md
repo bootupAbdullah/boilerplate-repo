@@ -46,7 +46,7 @@ After creating a new repository from the template, follow these steps to complet
 - [ ] **Add topics/tags** (e.g., `portfolio`, `react`, `javascript`, `frontend`)
 
 
-## 6. Branch Protection Setup
+## 2. Branch Protection Setup
 **⚠️ Important: This must be done manually for each repository**
 
 1. **Go to repository Settings → Rules**
