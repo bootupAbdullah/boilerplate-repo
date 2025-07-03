@@ -34,3 +34,41 @@
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+
+# Post-Template Setup Checklist
+
+After creating a new repository from the template, follow these steps to complete the professional setup:
+
+## 1. Repository Settings
+- [ ] **Add repository description** (GitHub repo main page → Settings → General)
+- [ ] **Set website URL** (if applicable)
+- [ ] **Add topics/tags** (e.g., `portfolio`, `react`, `javascript`, `frontend`)
+
+
+## 6. Branch Protection Setup
+**⚠️ Important: This must be done manually for each repository**
+
+1. **Go to repository Settings → Rules**
+2. **Click "New branch ruleset"**
+3. **Configure basic settings:**
+   - Ruleset name: `Main Branch Protection`
+   - Enforcement status: `Active`
+   - Target branches: `Include default branch`
+
+4. **Enable these rules:**
+   - ✅ **Restrict deletions** (prevent accidental deletion)
+   - ✅ **Require pull request before merging**
+   - ✅ **Require status checks to pass**
+   - ✅ **Require branches to be up to date**
+   - ✅ **Block force pushes**
+
+5. **Add required status checks:**
+   - Click "Add checks"
+   - Select your GitHub Actions workflow (usually "build")
+
+6. **Set pull request requirements:**
+   - Required approvals: `0` (for solo projects)
+   - Dismiss stale reviews: ✅ (if using reviews)
+
+7. **Click "Create" to save**
